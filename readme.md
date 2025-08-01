@@ -2,7 +2,7 @@
 This is a simple AngularJS demo project showcasing basic single-page application features including routing, data binding, and Material Design styling.
 ## 🔗 Live Demo
 You can view the live deployed version of this project here:
-**https://ongunakaycom.github.io/angular-js-demo/**
+*https://ongunakaycom.github.io/angular-js-demo*
 ---
 ## 🚀 Deployment
 This project is automatically deployed to GitHub Pages using a GitHub Actions workflow. Every push to the `main` branch triggers a deployment pipeline that publishes the latest version to the `gh-pages` branch.
