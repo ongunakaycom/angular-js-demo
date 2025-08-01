@@ -6,7 +6,6 @@ This is a simple AngularJS demo project showcasing basic single-page application
 
 ```
 /
-├── .gitattributes
 ├── about.html
 ├── app.js
 ├── cv.html
@@ -22,7 +21,6 @@ This is a simple AngularJS demo project showcasing basic single-page application
 - `app.js\`: AngularJS module and route configuration
 - `home.html\`, \`about.html\`, \`cv.html\`: Different views for the single page app
 - `style.css\`: Custom CSS styles
-- `.gitattributes\`: Git attributes file
 - `readme.md\`: This project documentation
 
 ## Features
