@@ -5,7 +5,7 @@ This is a simple AngularJS demo project showcasing basic single-page application
 ## 🔗 Live Demo
 
 You can view the live deployed version of this project here:  
-\*\*[https://ongunakaycom.github.io/angular-js-demo/](https://ongunakaycom.github.io/angular-js-demo/)\*\*
+**[https://ongunakaycom.github.io/angular-js-demo/](https://ongunakaycom.github.io/angular-js-demo/)**
 
 ---
 
@@ -15,12 +15,12 @@ This project is automatically deployed to GitHub Pages using a GitHub Actions wo
 
 ### CI/CD Workflow
 
-- Runs on every push to \`main\`
+- Runs on every push to `main`
 - Builds the public directory from project files
-- Pushes content to \`gh-pages\` branch
+- Pushes content to `gh-pages` branch
 - Uses [peaceiris/actions-gh-pages](https://github.com/peaceiris/actions-gh-pages)
 
-GitHub Actions config file: \`.github/workflows/deploy.yml\`
+GitHub Actions config file: `.github/workflows/deploy.yml`
 
 ---
 
@@ -42,13 +42,13 @@ GitHub Actions config file: \`.github/workflows/deploy.yml\`
 
 ## 📄 File Descriptions
 
-- \`index.html\`: Main entry point of the application
-- \`app.js\`: AngularJS module and route configuration
-- \`home.html\`, \`about.html\`, \`cv.html\`: Different views for the single-page app
-- \`style.css\`: Custom CSS styles
-- \`readme.md\`: This project documentation
-- \`.github/workflows/deploy.yml\`: GitHub Actions deployment configuration
-- \`.gitignore\`: Git ignore file for excluding files from version control
+- `index.html`: Main entry point of the application
+- `app.js`: AngularJS module and route configuration
+- `home.html`, `about.html`, `cv.html`: Different views for the single-page app
+- `style.css`: Custom CSS styles
+- `readme.md`: This project documentation
+- `.github/workflows/deploy.yml`: GitHub Actions deployment configuration
+- `.gitignore`: Git ignore file for excluding files from version control
 
 ---
 
@@ -79,7 +79,7 @@ cd path/to/angular-js-demo
 python3 -m http.server 8000
 ```
 
-Access it at: \`http://localhost:8000\`
+Access it at: `http://localhost:8000`
 
 ### Option 2: Node.js Live Server
 
@@ -91,7 +91,7 @@ live-server
 
 ### Option 3: Direct File Access
 
-Simply open \`index.html\` directly in your browser (note: routing may not work properly with this method).
+Simply open `index.html` directly in your browser (note: routing may not work properly with this method).
 
 ---
 
@@ -109,23 +109,23 @@ Simply open \`index.html\` directly in your browser (note: routing may not work 
 1. Clone the repository
 2. Modify files as needed
 3. Run locally using one of the server methods above
-4. Push changes to \`main\` to trigger auto-deployment
+4. Push changes to `main` to trigger auto-deployment
 
 ---
 
 ## 🛠️ Technology Stack
 
-- \*\*AngularJS\*\* (1.8.2)
-- \*\*Angular Material\*\*
-- \*\*ngRoute\*\*
-- \*\*HTML5\*\*, \*\*CSS3\*\*
-- \*\*GitHub Actions\*\* (CI/CD)
+- **AngularJS** (1.8.2)
+- **Angular Material**
+- **ngRoute**
+- **HTML5**, **CSS3**
+- **GitHub Actions** (CI/CD)
 
 ---
 
 ## 📝 License
 
-This project is licensed under the \*\*Apache-2.0 License\*\*.
+This project is licensed under the **Apache-2.0 License**.
 
 ---
 
