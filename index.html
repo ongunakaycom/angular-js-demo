@@ -1,61 +1,56 @@
 <!DOCTYPE html>
-<html ng-app="myApp" lang="en">
+<html ng-app="cvApp" lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>AngularJS Material Hello</title>
+  <title>Ongun Akay Portfolio</title>
 
-  <!-- AngularJS core -->
+  <!-- AngularJS Core ve Modüller -->
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
-
-  <!-- AngularJS Animations & Aria (required for Angular Material) -->
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-animate.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-aria.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.min.js"></script>
 
-  <!-- AngularJS Material CSS & JS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/angular-material@1.2.2/angular-material.min.css" />
-  <script src="https://cdn.jsdelivr.net/npm/angular-material@1.2.2/angular-material.min.js"></script>
+  <!-- Angular Material -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/angular-material@1.2.3/angular-material.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/angular-material@1.2.3/angular-material.min.js"></script>
 
-  <style>
-    body {
-      font-family: Roboto, Arial, sans-serif;
-      margin: 40px;
-      background: #fafafa;
-      color: #333;
-      text-align: center;
-    }
-    md-card {
-      max-width: 400px;
-      margin: 50px auto;
-      padding: 20px;
-    }
-  </style>
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+  <!-- Custom CSS & App -->
+  <link rel="stylesheet" href="style.css" />
+  <script src="app.js"></script>
 </head>
-<body ng-controller="MainController as main" layout="column" layout-align="center center">
+<body layout="column" ng-cloak>
 
-  <md-card>
-    <h2>Hello, {{ main.name }}!</h2>
-    <p>I am a full-stack developer working with AngularJS and beyond.</p>
+  <md-toolbar>
+    <div class="md-toolbar-tools">
+      <h2>Ongun Akay - Front-End Developer</h2>
+      <span flex></span>
+      <md-button class="md-icon-button" aria-label="Home" ng-href="#!/"> 
+        <md-icon class="material-icons">home</md-icon>
+      </md-button>
+      <md-button class="md-icon-button" aria-label="About" ng-href="#!/about">
+        <md-icon class="material-icons">info</md-icon>
+      </md-button>
+      <md-button class="md-icon-button" aria-label="CV" ng-href="#!/cv">
+        <md-icon class="material-icons">description</md-icon>
+      </md-button>
+      <md-button class="md-icon-button" aria-label="GitHub" ng-href="https://github.com/ongunakaycom" target="_blank">
+        <md-icon class="material-icons">code</md-icon>
+      </md-button>
+      <md-button class="md-icon-button" aria-label="LinkedIn" ng-href="https://linkedin.com/in/ongunakay" target="_blank">
+        <md-icon class="material-icons">person</md-icon>
+      </md-button>
+      <md-button class="md-icon-button" aria-label="Email" ng-href="mailto:info@ongunakay.com">
+        <md-icon class="material-icons">email</md-icon>
+      </md-button>
+    </div>
+  </md-toolbar>
 
-    <md-input-container class="md-block">
-      <label>Change Name</label>
-      <input ng-model="main.name" />
-    </md-input-container>
+  <md-content flex layout-padding>
+    <div ng-view></div>
+  </md-content>
 
-    <md-button class="md-raised md-primary" ng-click="main.reset()" ng-disabled="!main.name">
-      Reset
-    </md-button>
-  </md-card>
-
-  <script>
-    angular.module('myApp', ['ngMaterial'])
-      .controller('MainController', function() {
-        const vm = this;
-        vm.name = 'Ongun Akay';
-
-        vm.reset = function() {
-          vm.name = '';
-        };
-      });
-  </script>
 </body>
 </html>
