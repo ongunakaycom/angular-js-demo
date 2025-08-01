@@ -18,12 +18,12 @@ This is a simple AngularJS demo project showcasing basic single-page application
 
 ## File Descriptions
 
-- \`index.html\`: Main entry point of the application
-- \`app.js\`: AngularJS module and route configuration
-- \`home.html\`, \`about.html\`, \`cv.html\`: Different views for the single page app
-- \`style.css\`: Custom CSS styles
-- \`.gitattributes\`: Git attributes file
-- \`readme.md\`: This project documentation
+- `index.html\`: Main entry point of the application
+- `app.js\`: AngularJS module and route configuration
+- `home.html\`, \`about.html\`, \`cv.html\`: Different views for the single page app
+- `style.css\`: Custom CSS styles
+- `.gitattributes\`: Git attributes file
+- `readme.md\`: This project documentation
 
 ## Features
 
@@ -41,14 +41,14 @@ This is a simple AngularJS demo project showcasing basic single-page application
 
 ## Installation & Usage
 
-### Method 1: Python HTTP Server (Recommended)
+### Method 1: Python HTTP Server
 
 ```bash
 cd path/to/angular-js-demo
 python3 -m http.server 8000
 ```
 
-Then open your browser at \`http://localhost:8000\`
+Then open your browser at `http://localhost:8000`
 
 ### Method 2: Node.js Live Server
 
@@ -81,11 +81,11 @@ To modify or extend this project:
 
 ## Technology Stack
 
-- \*\*AngularJS\*\* (1.x): JavaScript framework
-- \*\*Angular Material\*\*: UI component library
-- \*\*ngRoute\*\*: Routing module
-- \*\*HTML5\*\*: Markup
-- \*\*CSS3\*\*: Styling
+- **AngularJS** (1.8.2): JavaScript framework
+- **Angular Material**: UI component library
+- **ngRoute**: Routing module
+- **HTML5**: Markup
+- **CSS3**: Styling
 
 ## License
 
@@ -99,7 +99,7 @@ I'm Ongun Akay, a Senior Full-Stack Developer with expertise across various tech
 - 🌱 Currently, I'm sharpening my skills in advanced concepts of web development.
 - 💞️ I’m always open to exciting collaborations and projects that challenge my abilities.
 
-\## Contributing
+## Contributing
 
 Feel free to submit issues and enhancement requests!
 
