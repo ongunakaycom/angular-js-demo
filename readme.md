@@ -5,7 +5,7 @@ This is a simple AngularJS demo project showcasing basic single-page application
 ## Project Structure
 
 ```
-f:/HDD/github/angular-js-demo/
+/
 ├── .gitattributes
 ├── about.html
 ├── app.js
