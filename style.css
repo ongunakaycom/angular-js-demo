@@ -19,11 +19,12 @@ a:hover {
 /* === Layout === */
 .container {
   max-width: 960px;
-  margin: 0 auto;
-  background-color: #ffffff;
+  margin: 32px auto;
   padding: 24px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  background-color: white;
   border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
 }
 
 .page-container {

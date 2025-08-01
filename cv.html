@@ -1,8 +1,7 @@
 <md-content layout-padding>
   <div class="container">
 
-    <!-- Contact Information -->
-    <section>
+    <md-card layout-padding class="section-card">
       <h2>Contact Information</h2>
       <md-list>
         <md-list-item>
@@ -26,29 +25,26 @@
           {{cv.contact.location}}
         </md-list-item>
       </md-list>
-    </section>
+    </md-card>
 
-    <!-- Career Objective -->
-    <section>
+    <md-card layout-padding class="section-card">
       <h2>Career Objective</h2>
       <p>{{ cv.careerObjective }}</p>
-    </section>
+    </md-card>
 
-    <!-- Qualification Summary -->
-    <section>
+    <md-card layout-padding class="section-card">
       <h2>Qualification Summary</h2>
       <md-list>
         <md-list-item ng-repeat="item in cv.qualifications">
           {{item}}
         </md-list-item>
       </md-list>
-    </section>
+    </md-card>
 
-    <!-- Professional Experience -->
-    <section>
+    <md-card layout-padding class="section-card">
       <h2>Professional Experience</h2>
-      <div ng-repeat="exp in cv.professionalExperience">
-        <md-card layout-padding class="md-whiteframe-1dp" style="margin-bottom: 20px;">
+      <div ng-repeat="exp in cv.professionalExperience" style="margin-bottom: 16px;">
+        <md-card layout-padding class="md-whiteframe-1dp">
           <md-card-title>
             <md-card-title-text>
               <span class="md-headline">{{ exp.role }} - {{ exp.company }}</span><br>
@@ -62,13 +58,12 @@
           </md-card-content>
         </md-card>
       </div>
-    </section>
+    </md-card>
 
-    <!-- Skills -->
-    <section>
+    <md-card layout-padding class="section-card">
       <h2>Skills</h2>
       <md-chips readonly="true" ng-model="cv.skills"></md-chips>
-    </section>
+    </md-card>
 
   </div>
 </md-content>
