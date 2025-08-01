@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html ng-app="myApp" lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AngularJS Material Hello</title>
+
+  <!-- AngularJS core -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+
+  <!-- AngularJS Animations & Aria (required for Angular Material) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-animate.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-aria.min.js"></script>
+
+  <!-- AngularJS Material CSS & JS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/angular-material@1.2.2/angular-material.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/angular-material@1.2.2/angular-material.min.js"></script>
+
+  <style>
+    body {
+      font-family: Roboto, Arial, sans-serif;
+      margin: 40px;
+      background: #fafafa;
+      color: #333;
+      text-align: center;
+    }
+    md-card {
+      max-width: 400px;
+      margin: 50px auto;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body ng-controller="MainController as main" layout="column" layout-align="center center">
+
+  <md-card>
+    <h2>Hello, {{ main.name }}!</h2>
+    <p>I am a full-stack developer working with AngularJS and beyond.</p>
+
+    <md-input-container class="md-block">
+      <label>Change Name</label>
+      <input ng-model="main.name" />
+    </md-input-container>
+
+    <md-button class="md-raised md-primary" ng-click="main.reset()" ng-disabled="!main.name">
+      Reset
+    </md-button>
+  </md-card>
+
+  <script>
+    angular.module('myApp', ['ngMaterial'])
+      .controller('MainController', function() {
+        const vm = this;
+        vm.name = 'Ongun Akay';
+
+        vm.reset = function() {
+          vm.name = '';
+        };
+      });
+  </script>
+</body>
+</html>
