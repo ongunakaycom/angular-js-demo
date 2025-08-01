@@ -1,10 +1,10 @@
-\# AngularJS Demo Project
+# AngularJS Demo Project
 
 This is a simple AngularJS demo project showcasing basic single-page application features including routing, data binding, and Material Design styling.
 
-\## Project Structure
+## Project Structure
 
-\```
+```
 f:/HDD/github/angular-js-demo/
 ├── .gitattributes
 ├── about.html
@@ -14,9 +14,9 @@ f:/HDD/github/angular-js-demo/
 ├── index.html
 ├── readme.md
 └── style.css
-\```
+```
 
-\## File Descriptions
+## File Descriptions
 
 - \`index.html\`: Main entry point of the application
 - \`app.js\`: AngularJS module and route configuration
@@ -25,7 +25,7 @@ f:/HDD/github/angular-js-demo/
 - \`.gitattributes\`: Git attributes file
 - \`readme.md\`: This project documentation
 
-\## Features
+## Features
 
 - AngularJS routing with ngRoute
 - Dynamic content loading based on views
@@ -34,35 +34,35 @@ f:/HDD/github/angular-js-demo/
 - Responsive design
 - Single Page Application (SPA) architecture
 
-\## Prerequisites
+## Prerequisites
 
 - Modern web browser with JavaScript enabled
 - Basic HTTP server (for proper routing functionality)
 
-\## Installation & Usage
+## Installation & Usage
 
-\### Method 1: Python HTTP Server (Recommended)
+### Method 1: Python HTTP Server (Recommended)
 
-\```bash
+```bash
 cd path/to/angular-js-demo
 python3 -m http.server 8000
-\```
+```
 
 Then open your browser at \`http://localhost:8000\`
 
-\### Method 2: Node.js Live Server
+### Method 2: Node.js Live Server
 
-\```bash
+```bash
 npm install -g live-server
 cd path/to/angular-js-demo
 live-server
-\```
+```
 
-\### Method 3: Direct File Access
+### Method 3: Direct File Access
 
 Simply open \`index.html\` directly in your browser (note: routing may not work properly with this method).
 
-\## Browser Compatibility
+## Browser Compatibility
 
 This project is compatible with:
 - Chrome 60+
@@ -70,7 +70,7 @@ This project is compatible with:
 - Safari 12+
 - Edge 79+
 
-\## Development
+## Development
 
 To modify or extend this project:
 
@@ -79,7 +79,7 @@ To modify or extend this project:
 3. Test using one of the server methods above
 4. Commit your changes
 
-\## Technology Stack
+## Technology Stack
 
 - \*\*AngularJS\*\* (1.x): JavaScript framework
 - \*\*Angular Material\*\*: UI component library
@@ -87,21 +87,23 @@ To modify or extend this project:
 - \*\*HTML5\*\*: Markup
 - \*\*CSS3\*\*: Styling
 
-\## License
+## License
 
 This project is licensed under the Apache-2.0 License.
 
-\## Author
+## About Me
 
-\*\*Ongun Akay\*\*  
-Senior Full-Stack Developer  
-Email: info@ongunakay.com
+I'm Ongun Akay, a Senior Full-Stack Developer with expertise across various technologies.
+
+- 👀 I specialize in full-stack development with extensive experience in frontend and backend technologies.
+- 🌱 Currently, I'm sharpening my skills in advanced concepts of web development.
+- 💞️ I’m always open to exciting collaborations and projects that challenge my abilities.
 
 \## Contributing
 
 Feel free to submit issues and enhancement requests!
 
-\## Changelog
+## Changelog
 
 - Initial release with basic SPA functionality
 - Material Design integration
