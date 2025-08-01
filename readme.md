@@ -1,18 +1,23 @@
 # AngularJS Demo Project
 This is a simple AngularJS demo project showcasing basic single-page application features including routing, data binding, and Material Design styling.
+
 ## 🔗 Live Demo
 You can view the live deployed version of this project here:
-*https://ongunakaycom.github.io/angular-js-demo*
+https://ongunakaycom.github.io/angular-js-demo
+
 ---
 ## 🚀 Deployment
 This project is automatically deployed to GitHub Pages using a GitHub Actions workflow. Every push to the `main` branch triggers a deployment pipeline that publishes the latest version to the `gh-pages` branch.
+
 ### CI/CD Workflow
 - Runs on every push to `main`
 - Builds the public directory from project files
 - Pushes content to `gh-pages` branch
 - Uses peaceiris/actions-gh-pages
 GitHub Actions config file: `.github/workflows/deploy.yml`
+
 ---
+
 ## 📁 Project Structure
 ```
 /
@@ -30,17 +35,22 @@ GitHub Actions config file: `.github/workflows/deploy.yml`
 - `home.html`, `about.html`, `cv.html`: Different views for the single-page app
 - `style.css`: Custom CSS styles
 - `readme.md`: This project documentation
+
 ---
+
 ## ✨ Features
 - AngularJS routing with ngRoute
 - Dynamic content loading based on views
 - Material Design styling with Angular Material
 - Responsive single-page application (SPA)
 - Lightweight and easy to understand codebase
+
 ---
+
 ## 🧰 Prerequisites
 - A modern web browser (Chrome, Firefox, Edge, etc.)
 - A simple HTTP server (Python, Node, etc.)
+
 ---
 ## 📦 Usage
 ### Option 1: Python HTTP Server
