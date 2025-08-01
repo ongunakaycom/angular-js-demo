@@ -150,3 +150,7 @@ Pull requests, suggestions, and stars ⭐️ are always welcome!
 - ✅ Initial release with SPA functionality
 - 🎨 Angular Material styling added
 - 🚀 GitHub Pages deployment with CI/CD
+
+## License
+
+This project is licensed under the [MIT License](./LICENSE).
