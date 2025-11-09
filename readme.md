@@ -1,13 +1,12 @@
-# AngularJS Portfolio Demo
+# 🌟 AngularJS Portfolio Demo
 
-A simple single-page portfolio website built with **AngularJS**, **ngRoute**, and **Angular Material**. It demonstrates routing, modular architecture, and dynamic data binding for a personal portfolio.
+A **simple single-page portfolio website** built with **AngularJS**, **ngRoute**, and **Angular Material**. This project demonstrates **routing**, **modular architecture**, and **dynamic data binding** for a personal portfolio.
 
 ---
 
-## Project Structure
+## 🗂 Project Structure
 
 ```
-
 angular-js-demo/
 ├── .github/
 │   └── workflows/
@@ -21,22 +20,29 @@ angular-js-demo/
 ├── style.css                  # Main stylesheet
 ├── LICENSE
 └── readme.md
-
-````
-
----
-
-## Features
-
-- **SPA with AngularJS** using `ngRoute` for client-side routing.
-- **Three main pages**: Home, About, CV.
-- **Dynamic content** rendered via controllers (`HomeController`, `AboutController`, `CvController`).
-- **Responsive layout** using Angular Material design components.
-- **GitHub Pages deployment** automated with GitHub Actions.
+```
 
 ---
 
-## AngularJS App Overview
+## ⚡ Features
+
+* 🚀 **Single-Page Application (SPA)** using AngularJS with **ngRoute** for client-side routing.
+* 📄 **Three main pages**:
+
+  * Home 🏠
+  * About 👤
+  * CV 📑
+* 🔄 **Dynamic content** rendered via AngularJS controllers:
+
+  * `HomeController` – Manages welcome message
+  * `AboutController` – Displays personal biography
+  * `CvController` – Handles contact info, career objectives, qualifications, experience, and skills
+* 📱 **Responsive layout** using **Angular Material** design components.
+* 📦 **GitHub Pages deployment** automated with **GitHub Actions**.
+
+---
+
+## ⚙️ AngularJS App Overview
 
 ```javascript
 angular.module('cvApp', ['ngRoute', 'ngMaterial'])
@@ -47,26 +53,24 @@ angular.module('cvApp', ['ngRoute', 'ngMaterial'])
       .when('/cv', { templateUrl: 'cv.html', controller: 'CvController', controllerAs: 'cv' })
       .otherwise({ redirectTo: '/' });
   }]);
-````
-
-* **HomeController**: Manages welcome message.
-* **AboutController**: Displays personal biography.
-* **CvController**: Handles contact info, career objectives, qualifications, experience, and skills.
+```
 
 ---
 
-## Installation & Usage
+## 🏡 Installation & Usage
 
-1. **Clone the repository**
+### Clone the repository
 
 ```bash
 git clone https://github.com/ongunakaycom/angular-js-demo.git
 cd angular-js-demo
 ```
 
-2. **Open `index.html`** in your browser (no server required for this static demo).
+### Open locally
 
-3. **Optional: Run on a local server** (for routing support)
+* Simply open `index.html` in your browser (no server required for this static demo).
+
+### Optional: Run on a local server (recommended for routing support)
 
 ```bash
 # Using Python
@@ -76,31 +80,33 @@ python -m http.server 8080
 
 ---
 
-## Deployment
+## 🚀 Deployment
 
-This project uses **GitHub Actions** to deploy to GitHub Pages automatically when changes are pushed to the `main` branch.
+This project uses **GitHub Actions** to deploy to **GitHub Pages** automatically when changes are pushed to the `main` branch.
 
-Workflow: `.github/workflows/deploy.yml`
+**Workflow:** `.github/workflows/deploy.yml`
 
-Key steps:
+**Key steps:**
 
-1. Checkout repository.
-2. Copy project files to a `public` folder.
-3. Deploy contents of `public/` to GitHub Pages using `peaceiris/actions-gh-pages`.
-
----
-
-## About Me
-
-I'm Ongun Akay, a Senior Full-Stack Developer with expertise across various technologies.
-
-* Website: [ongunakay.com](https://ongunakay.com)
-* GitHub: [github.com/ongunakaycom](https://github.com/ongunakaycom)
-* LinkedIn: [linkedin.com/in/ongunakay](https://linkedin.com/in/ongunakay)
-* Email: [info@ongunakay.com](mailto:info@ongunakay.com)
+* ✅ Checkout repository
+* 📂 Copy project files to a public folder
+* 🌐 Deploy contents of `public/` to GitHub Pages using `peaceiris/actions-gh-pages`
 
 ---
 
-## License
+## 👨‍💻 About Me
 
-This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
+I'm **Ongun Akay**, a Senior Full-Stack Developer with expertise across various technologies.
+
+* 🌐 Website: [ongunakay.com](https://ongunakay.com)
+* 💻 GitHub: [github.com/ongunakaycom](https://github.com/ongunakaycom)
+* 🔗 LinkedIn: [linkedin.com/in/ongunakay](https://linkedin.com/in/ongunakay)
+* ✉️ Email: [info@ongunakay.com](mailto:info@ongunakay.com)
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**. See [LICENSE](LICENSE) for details.
+
+---
