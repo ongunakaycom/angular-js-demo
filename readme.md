@@ -1,156 +1,104 @@
-# AngularJS Demo Project
+# AngularJS Portfolio Demo
 
-This is a simple AngularJS demo project showcasing basic single-page application features including routing, data binding, and Material Design styling.
-
-## 🔗 Live Demo
-
-You can view the live deployed version of this project here:  
-**[https://ongunakaycom.github.io/angular-js-demo/](https://ongunakaycom.github.io/angular-js-demo/)**
+A simple single-page portfolio website built with **AngularJS**, **ngRoute**, and **Angular Material**. It demonstrates routing, modular architecture, and dynamic data binding for a personal portfolio.
 
 ---
 
-## 🚀 Deployment
-
-This project is automatically deployed to GitHub Pages using a GitHub Actions workflow. Every push to the \`main\` branch triggers a deployment pipeline that publishes the latest version to the \`gh-pages\` branch.
-
-### CI/CD Workflow
-
-- Runs on every push to `main`
-- Builds the public directory from project files
-- Pushes content to `gh-pages` branch
-- Uses [peaceiris/actions-gh-pages](https://github.com/peaceiris/actions-gh-pages)
-
-GitHub Actions config file: `.github/workflows/deploy.yml`
-
----
-
-## 📁 Project Structure
+## Project Structure
 
 ```
+
+angular-js-demo/
 ├── .github/
 │   └── workflows/
-│       └── deploy.yml
+│       └── deploy.yml        # GitHub Actions workflow for deployment
 ├── .gitignore
-├── about.html
-├── app.js
-├── cv.html
-├── home.html
-├── index.html
-├── readme.md
-└── style.css
-```
+├── index.html                 # Main entry point
+├── home.html                  # Home page template
+├── about.html                 # About page template
+├── cv.html                    # CV / Resume page template
+├── app.js                     # AngularJS application and controllers
+├── style.css                  # Main stylesheet
+├── LICENSE
+└── readme.md
 
-## 📄 File Descriptions
-
-- `index.html`: Main entry point of the application
-- `app.js`: AngularJS module and route configuration
-- `home.html`, `about.html`, `cv.html`: Different views for the single-page app
-- `style.css`: Custom CSS styles
-- `readme.md`: This project documentation
-- `.github/workflows/deploy.yml`: GitHub Actions deployment configuration
-- `.gitignore`: Git ignore file for excluding files from version control
+````
 
 ---
 
-## ✨ Features
+## Features
 
-- AngularJS routing with ngRoute
-- Dynamic content loading based on views
-- Material Design styling with Angular Material
-- Responsive single-page application (SPA)
-- Lightweight and easy to understand codebase
-- Automated deployment to GitHub Pages
-
----
-
-## 🧰 Prerequisites
-
-- A modern web browser (Chrome, Firefox, Edge, etc.)
-- A simple HTTP server (Python, Node, etc.)
+- **SPA with AngularJS** using `ngRoute` for client-side routing.
+- **Three main pages**: Home, About, CV.
+- **Dynamic content** rendered via controllers (`HomeController`, `AboutController`, `CvController`).
+- **Responsive layout** using Angular Material design components.
+- **GitHub Pages deployment** automated with GitHub Actions.
 
 ---
 
-## 📦 Usage
+## AngularJS App Overview
 
-### Option 1: Python HTTP Server
+```javascript
+angular.module('cvApp', ['ngRoute', 'ngMaterial'])
+  .config(['$routeProvider', function($routeProvider) {
+    $routeProvider
+      .when('/', { templateUrl: 'home.html', controller: 'HomeController', controllerAs: 'home' })
+      .when('/about', { templateUrl: 'about.html', controller: 'AboutController', controllerAs: 'about' })
+      .when('/cv', { templateUrl: 'cv.html', controller: 'CvController', controllerAs: 'cv' })
+      .otherwise({ redirectTo: '/' });
+  }]);
+````
+
+* **HomeController**: Manages welcome message.
+* **AboutController**: Displays personal biography.
+* **CvController**: Handles contact info, career objectives, qualifications, experience, and skills.
+
+---
+
+## Installation & Usage
+
+1. **Clone the repository**
 
 ```bash
-cd path/to/angular-js-demo
-python3 -m http.server 8000
+git clone https://github.com/ongunakaycom/angular-js-demo.git
+cd angular-js-demo
 ```
 
-Access it at: `http://localhost:8000`
+2. **Open `index.html`** in your browser (no server required for this static demo).
 
-### Option 2: Node.js Live Server
+3. **Optional: Run on a local server** (for routing support)
 
 ```bash
-npm install -g live-server
-cd path/to/angular-js-demo
-live-server
+# Using Python
+python -m http.server 8080
+# Then navigate to http://localhost:8080
 ```
 
-### Option 3: Direct File Access
+---
 
-Simply open `index.html` directly in your browser (note: routing may not work properly with this method).
+## Deployment
+
+This project uses **GitHub Actions** to deploy to GitHub Pages automatically when changes are pushed to the `main` branch.
+
+Workflow: `.github/workflows/deploy.yml`
+
+Key steps:
+
+1. Checkout repository.
+2. Copy project files to a `public` folder.
+3. Deploy contents of `public/` to GitHub Pages using `peaceiris/actions-gh-pages`.
 
 ---
 
-## 🌐 Browser Compatibility
+## About Me
 
-- Chrome 60+
-- Firefox 55+
-- Safari 12+
-- Edge 79+
-
----
-
-## 🔧 Development
-
-1. Clone the repository
-2. Modify files as needed
-3. Run locally using one of the server methods above
-4. Push changes to `main` to trigger auto-deployment
+* Website: [ongunakay.com](https://ongunakay.com)
+* GitHub: [github.com/ongunakaycom](https://github.com/ongunakaycom)
+* LinkedIn: [linkedin.com/in/ongunakay](https://linkedin.com/in/ongunakay)
+* Email: [info@ongunakay.com](mailto:info@ongunakay.com)
 
 ---
-
-## 🛠️ Technology Stack
-
-- **AngularJS** (1.8.2)
-- **Angular Material**
-- **ngRoute**
-- **HTML5**, **CSS3**
-- **GitHub Actions** (CI/CD)
-
----
-
-## 📝 License
-
-This project is licensed under the **Apache-2.0 License**.
-
----
-
-## 👨‍💻 About Me
-
-I'm **Ongun Akay**, a Senior Full-Stack Developer with expertise across various technologies.
-
-- 👀 I specialize in full-stack development with deep frontend/backend skills
-- 🌱 Currently sharpening advanced web architecture and deployment practices
-- 💬 Reach out: info@ongunakay.com
-
----
-
-## 🤝 Contributing
-
-Pull requests, suggestions, and stars ⭐️ are always welcome!
-
----
-
-## 📌 Changelog
-
-- ✅ Initial release with SPA functionality
-- 🎨 Angular Material styling added
-- 🚀 GitHub Pages deployment with CI/CD
 
 ## License
 
-This project is licensed under the [MIT License](./LICENSE).
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
