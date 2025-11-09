@@ -92,6 +92,8 @@ Key steps:
 
 ## About Me
 
+I'm Ongun Akay, a Senior Full-Stack Developer with expertise across various technologies.
+
 * Website: [ongunakay.com](https://ongunakay.com)
 * GitHub: [github.com/ongunakaycom](https://github.com/ongunakaycom)
 * LinkedIn: [linkedin.com/in/ongunakay](https://linkedin.com/in/ongunakay)
